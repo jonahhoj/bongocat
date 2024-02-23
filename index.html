@@ -1,17 +1,18 @@
 <h1>bongocat</h1>
-<body>
-<p>Press spacebar here to play bongos!</p>
-<input type="text" id="demo" onkeydown="bongoCatHit()" onkeyup="bongoCatBack()">
-
-<script>
+<head>
+	<script>
 function bongoCatHit() {
-    document.getElementById('bongoCat').src='https://i.kym-cdn.com/photos/images/newsfeed/001/411/204/30c.png'
+    document.getElementById('bongoCat').src='hitdown.png'
 }
 function bongoCatBack() {
-	document.getElementById('bongoCat').src='https://i.kym-cdn.com/photos/images/newsfeed/001/411/203/bd9.png'
+	document.getElementById('bongoCat').src='hitup.png'
 }
 </script>
+</head>
+<body>
 
-<img id="bongoCat" src="https://i.kym-cdn.com/photos/images/newsfeed/001/411/203/bd9.png" style="width:500px">
 
+<img id="bongoCat" src="hitup.png" style="width:500px">
+<p>Press anything here to play bongos!</p>
+<input type="text" id="demo" onkeydown="bongoCatHit()" onkeyup="bongoCatBack()">
 </body>
