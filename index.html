@@ -2,6 +2,15 @@
 	<title>bongocat</title>
 	<link rel="icon" type="image/x-icon" href="bongocat.png">
 	<script>
+function play() {
+    var audio = document.getElementById('bongohit');
+    if (audio.paused) {
+        audio.play();
+    }
+    else{
+        audio.currentTime = 0
+    }
+}
 function bongoCatHit() {
     document.getElementById('bongoCat').src='hitdown.png';
 	document.getElementById('bongohit').play();
