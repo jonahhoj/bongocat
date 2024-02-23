@@ -1,5 +1,6 @@
-<h1>bongocat</h1>
 <head>
+	<title>bongocat</title>
+	<link rel="icon" type="image/x-icon" href="bongocat.png">
 	<script>
 function bongoCatHit() {
     document.getElementById('bongoCat').src='hitdown.png';
@@ -12,9 +13,9 @@ function bongoCatBack() {
 </script>
 </head>
 <body>
-
-<audio id="bongohit" src="bongosound.mp3" preload="auto">
+<h1 style="font-family:verdana;">bongocat</h1>
+<audio id="bongohit" src="bongosound.mp3" preload="auto"></audio>
 <img id="bongoCat" src="hitup.png" style="width:500px">
-<p>Press anything here to play bongos!</p>
+<p style="font-family:verdana;">Press anything here to play bongos!</p>
 <input type="text" id="demo" onkeydown="bongoCatHit()" onkeyup="bongoCatBack()">
 </body>
